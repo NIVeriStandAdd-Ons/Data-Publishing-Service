@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>Datadashboard CD</eng>
+    <loc>Datadashboard CD</loc>
+  </AddMenu>
+  <Version>1.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>2474</MaxOccurrence>
+  <MainPageGUID>3f6e11e3-fcb1-45cc-b022-d269b60be372</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Datadashboard CD\Datadashboard CD Configuration.llb\Datadashboard CD Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>PharlapWindows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Datadashboard CD\Datadashboard CD Engine.llb\Datadashboard CD RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Datadashboard CD\Datadashboard CD Engine.llb\Datadashboard CD RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>Datadashboard CD</eng>
+        <loc>Datadashboard CD</loc>
+      </Name>
+      <GUID>3f6e11e3-fcb1-45cc-b022-d269b60be372</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Datadashboard CD\Datadashboard CD Configuration.llb\Datadashboard CD Main Page.vi</Path>
+      </Item2Launch>
+    </Page>
+    
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
