@@ -1,21 +1,18 @@
-## Data Dashboard Custom Device ##
+## Data Publishing Service##
 
-**Data Dashboard Custom Device**  allows users to publish NI VeriStand channels as LabVIEW shared variables. User can connect to the published shared variables e.g. using the [Data Dashboard for LabVIEW](https://decibel.ni.com/content/docs/DOC-19387).
+**Data Publishing Service**  allows users to publish NI VeriStand channels as LabVIEW shared variables. User can connect to the published shared variables e.g. using the [Data Dashboard for LabVIEW](https://decibel.ni.com/content/docs/DOC-19387).
 
 ### LabVIEW Version ###
 
 LabVIEW 2013
 
-To build the custom device in higher versions of LabVIEW open the Select Channels Dialog.vi, right click the .NET Control in the front panel -> "Select .NET Control" -> Choose "NationalInstruments.VeriStand.SystemStorageUI" as Assembly and "TreeBrowserWF" under "Controls". Inthe dialog that pops up hit "ignore".
-Also follow the Readme.txt in /Source/LV_utilities.zip
-
 ### Built Availability ###
 
-Builds of this IP are not available.
+Users are allowed to build anything under Build Specifications in the source's LabVIEW project(s).  Pre-built versions are available upon request through NI Field Sales. 
 
 ### Quality, Limitations ###
 
-This IP was made in 2014 and has not been tested since. There are no known users of the IP. Proceed with caution.
+IP has been tested by developer. It meets VeriStand addon coding best practices.
 
 ### Dependencies ###
 [DSC Module](http://www.ni.com/labview/labviewdsc/)
