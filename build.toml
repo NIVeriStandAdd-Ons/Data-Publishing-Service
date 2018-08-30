@@ -1,6 +1,6 @@
 [archive]
 build_output_dir = 'Built'
-archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\data_publishing_service'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\services\data_publishing_service'
 
 [projects.cd]
 path = 'Source\Data Publishing Service.lvproj'
