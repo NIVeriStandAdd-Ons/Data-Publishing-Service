@@ -22,7 +22,7 @@ build_spec = 'Data Publishing Service Launcher'
 [package]
 type = 'nipkg'
 name = 'data-publishing-service-{veristand_version}'
-dev_xml_path = 'Source\Ignore.xml'
+dev_xml_path = ''
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}'
 
 [[release.steps]]
