@@ -21,6 +21,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Service Launcher" Type="Folder">
+			<Item Name="Data Publishing Service Launcher.lvlib" Type="Library" URL="../Service Launcher/Data Publishing Service Launcher.lvlib"/>
+		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
 		</Item>
@@ -152,10 +155,10 @@
 			<Item Name="SCT Get Types.vi" Type="VI" URL="/&lt;resource&gt;/dialog/variable/SCT Get Types.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Data Publishing Service" Type="Source Distribution">
+			<Item Name="Data Publishing Service Launcher" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{5D7753C6-2E03-4846-9AB5-EE0B1B283272}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Data Publishing Service</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Data Publishing Service Launcher</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
@@ -163,7 +166,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{ED84C572-9359-46DF-B789-7947918AC5B8}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Services/NI_AB_PROJECTNAME</Property>
@@ -175,15 +178,15 @@
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[0].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4F9D8F1D-4457-40A7-AFFE-4C75B1627020}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D660DEF3-B90D-46FA-B95A-8AC66D9AFF92}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Data Publishing Service.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Exclude</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Data Publishing Service.lvlib/Data Publishing Service.vi</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
@@ -193,12 +196,21 @@
 				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Data Publishing Service.lvlib/Types</Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Service Launcher/Data Publishing Service Launcher.lvlib</Property>
+				<Property Name="Source[5].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Library</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Service Launcher/Data Publishing Service Launcher.lvlib/Data Publishing Service Launcher.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
-			<Item Name="Data Publishing Service Packed Lib" Type="Packed Library">
+			<Item Name="Data Publishing Service Support" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{94BA79F9-F733-485D-8BDA-391B3B8E1956}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Data Publishing Service Packed Lib</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Data Publishing Service Support</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -206,17 +218,20 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{126872AE-67E7-4D13-B406-21C89A9E48C8}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Data Publishing Service.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Services/NI_AB_PROJECTNAME/Data Publishing Service.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">Data Publishing Service Support.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Services/NI_AB_PROJECTNAME/Data Publishing Service Support.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Services/NI_AB_PROJECTNAME</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DE033958-5E38-4B1D-B067-8793B5B559A9}</Property>
+				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[0].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[0].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6B4AEEC4-2276-4665-A487-13FAB1014C12}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Data Publishing Service.lvlib</Property>
@@ -226,14 +241,18 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Data Publishing Service.lvlib/Data Publishing Service.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Data Publishing Service Packed Lib</Property>
-				<Property Name="TgtF_internalName" Type="Str">Data Publishing Service Packed Lib</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Data Publishing Service Support</Property>
+				<Property Name="TgtF_internalName" Type="Str">Data Publishing Service Support</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">Data Publishing Service Packed Lib</Property>
+				<Property Name="TgtF_productName" Type="Str">Data Publishing Service Support</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{3C17BAD3-C7DE-4376-A04E-419C6A1E2F99}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Data Publishing Service.lvlibp</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Data Publishing Service Support.lvlibp</Property>
 			</Item>
 		</Item>
 	</Item>
