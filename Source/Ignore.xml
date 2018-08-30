@@ -10,9 +10,22 @@
   <MaxOccurrence>-1</MaxOccurrence>
   <MainPageGUID>2e554255-6e45-4a16-bc2c-1480410d8293</MainPageGUID>
   <InitializationVI>
+      <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Services\Data Publishing Service\Data Publishing Service Launcher.vi</Path>
+    </Item2Launch>
   </InitializationVI>
   <CustomDeviceVI>
 		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Windows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Services\Data Publishing Service\Data Publishing Service Launcher.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Services\Data Publishing Service\Data Publishing Service Launcher.vi</RealTimeSystemDestination>
+			</Source>
 		</SourceDistribution>
 	</CustomDeviceVI>
   <Dependencies />
