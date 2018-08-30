@@ -1,0 +1,15 @@
+Package: data-publishing-service-{veristand_version}
+Version: {nipkg_version}
+Architecture: windows_x64
+Maintainer: National Instruments <support@ni.com>
+XB-Plugin: file
+Description:  **Data Publishing Service**  allows users to publish NI VeriStand channels as LabVIEW shared variables or as SystemLink tags. User can connect to the published shared variables e.g. using the [Data Dashboard for LabVIEW](https://decibel.ni.com/content/docs/DOC-19387) or the the tags via SystemLink. SystemLink is used by default.
+XB-Eula:  
+Priority: standard
+Homepage: http://www.ni.com
+XB-LanguageSupport: en
+XB-UserVisible: yes
+Section: Add-Ons
+XB-DisplayVersion: 1.0
+XB-DisplayName: Data Publishing Service for VeriStand {veristand_version}
+Depends: 

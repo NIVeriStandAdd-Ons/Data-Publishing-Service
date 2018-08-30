@@ -1,0 +1,34 @@
+[archive]
+build_output_dir = 'Built'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\data_publishing_service'
+
+[projects.cd]
+path = 'Source\Data Publishing Service.lvproj'
+
+[[build.steps]]
+name = 'Data Publishing Service Support'
+type = 'lvBuildSpec'
+project = '{cd}'
+target = 'My Computer'
+build_spec = 'Data Publishing Service Support'
+
+[[build.steps]]
+name = 'Data Publishing Service Launcher'
+type = 'lvBuildSpec'
+project = '{cd}'
+target = 'My Computer'
+build_spec = 'Data Publishing Service Launcher'
+
+[package]
+type = 'nipkg'
+name = 'data-publishing-service-{veristand_version}'
+dev_xml_path = ''
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}'
+
+[[release.steps]]
+name = 'Master Release'
+type = 'githubRelease'
+2015_release_branches = ["master",]
+2016_release_branches = ["master",]
+2017_release_branches = ["master",]
+2018_release_branches = ["master",]
