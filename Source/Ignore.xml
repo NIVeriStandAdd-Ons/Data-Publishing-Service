@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>Data Publishing Service</eng>
+    <loc>Data Publishing Service</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline Model Interface</Type>
+  <MaxOccurrence>-1</MaxOccurrence>
+  <MainPageGUID>606f4b44-56c1-4579-b2da-bd4297fe7d9d</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Services\Data Publishing Service\Data Publishing Service Launcher.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
