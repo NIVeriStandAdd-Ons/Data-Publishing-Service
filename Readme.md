@@ -8,15 +8,23 @@ LabVIEW 2015
 
 ### Built Availability ###
 
-Users are allowed to build anything under Build Specifications in the source's LabVIEW project(s).  Pre-built versions are available upon request through NI Field Sales. 
+https://github.com/NIVeriStandAdd-Ons/Data-Publishing-Service/releases 
+
+### Built Dependencies ###
+
+[DSC Module](http://www.ni.com/labview/labviewdsc/) (if using shared variables and Data Dashboard)
+
+[SystemLink](http://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html)
 
 ### Quality, Limitations ###
 
 IP has been tested by developer. It meets VeriStand addon coding best practices.
 
-### Dependencies ###
+### Source Dependencies ###
+
 [DSC Module](http://www.ni.com/labview/labviewdsc/) (if using shared variables and Data Dashboard)
-[SystemLink]
+
+[SystemLink](http://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html)
 
 ### License ###
 
