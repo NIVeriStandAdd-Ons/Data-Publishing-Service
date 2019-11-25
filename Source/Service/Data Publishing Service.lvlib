@@ -33,6 +33,8 @@
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Filter Aliases.vi" Type="VI" URL="../SubVIs/Filter Aliases.vi"/>
 		<Item Name="Get INI Configuration.vi" Type="VI" URL="../SubVIs/Get INI Configuration.vi"/>
+		<Item Name="SL Write Multiple Tags.vi" Type="VI" URL="../SubVIs/SL Write Multiple Tags.vi"/>
+		<Item Name="Stop Publishing.vi" Type="VI" URL="../SubVIs/Stop Publishing.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="ClientType.ctl" Type="VI" URL="../Types/ClientType.ctl"/>
