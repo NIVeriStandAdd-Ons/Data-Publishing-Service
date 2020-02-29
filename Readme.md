@@ -1,10 +1,13 @@
-## Data Publishing Service##
+Data-Publishing-Service
+========================
+
+### Description ###
 
 **Data Publishing Service** allows users to publish NI VeriStand channels as SystemLink tags. User can connect to the tags via SystemLink.
 
-### LabVIEW Version ###
+### Help ###
 
-LabVIEW 2019
+Help is included in most System Explorer sections.
 
 ### Built Availability ###
 
@@ -17,6 +20,10 @@ https://github.com/NIVeriStandAdd-Ons/Data-Publishing-Service/releases
 ### Quality, Limitations ###
 
 IP has been tested by developer. It meets VeriStand addon coding best practices.
+
+### Source Version ###
+
+LabVIEW 2019
 
 ### Source Dependencies ###
 [SystemLink](http://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html)
