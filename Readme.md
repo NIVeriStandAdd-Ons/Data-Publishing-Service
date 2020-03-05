@@ -1,4 +1,7 @@
-## Data Publishing Service ##
+Data-Publishing-Service
+========================
+
+### Description ###
 
 **Data Publishing Service** allows users to publish NI VeriStand channels and Alarms status as SystemLink tags. User can connect to the tags via SystemLink. The service will attempt to publish the channels that were configured as Aliases in the System Definition File. 
 
@@ -16,9 +19,9 @@ After running for the first time, the service will automatically generate a file
 
 * Tags.UndeployKill: If TRUE, the service will delete the created tags from the SystemLink server once undeployed. If FALSE, the service will just close the reference to the tags and keep them in the server. 
 
-### LabVIEW Version ###
+### Help ###
 
-LabVIEW 2019
+Help is included in most System Explorer sections.
 
 ### Built Availability ###
 
@@ -31,6 +34,10 @@ https://github.com/NIVeriStandAdd-Ons/Data-Publishing-Service/releases
 ### Quality, Limitations ###
 
 IP has been tested by developer. It meets VeriStand addon coding best practices.
+
+### Source Version ###
+
+LabVIEW 2019
 
 ### Source Dependencies ###
 [SystemLink](http://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html)
