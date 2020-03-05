@@ -19,10 +19,6 @@ After running for the first time, the service will automatically generate a file
 
 * Tags.UndeployKill: If TRUE, the service will delete the created tags from the SystemLink server once undeployed. If FALSE, the service will just close the reference to the tags and keep them in the server. 
 
-### Help ###
-
-Help is included in most System Explorer sections.
-
 ### Built Availability ###
 
 https://github.com/NIVeriStandAdd-Ons/Data-Publishing-Service/releases 
